@@ -2,19 +2,6 @@ var mongoose = require( 'mongoose' );
 var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
 
-// process.env.JWT_Secret = "JHendrix"
-// var meterParams = new mongoose.Schema({
-//   paramId: String,
-//   paramName: String,
-//   paramUnit: String
-// });
-// var clientSchema = new mongoose.Schema({
-//   clientId: String,
-//   clientName: String,
-//   clinetDescription: String,
-//   clientSites: [{type: mongoose.Schema.Types.ObjectId, ref: 'site'}]//Schema.ObjectId//siteSchema
-// });
-
 var userSchema = new mongoose.Schema({
   email: {
     type: String,
